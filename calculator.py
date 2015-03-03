@@ -43,13 +43,13 @@ def feet_to_meters(feet):
     return meters
 
 
-# Calculate labor yield
+# Calculate labor yield (amount of money made per hour of labor used)
 def labor_yield(sales, hours_used):
     lyield = float(sales / hours_used)
     return lyield
 
 
-# Calculate labor percentage
+# Calculate labor percentage (percentage of sales that went to labor cost)
 def labor_percent(sales, pay_used):
     percent = float((pay_used / sales) * 100)
     return percent
@@ -61,6 +61,7 @@ def profit(sales, pay_used, cost_sales):
     return gain
 
 
+# Allow user to choose which calculation they would like to perform
 def choose():
         print(" ")
         print(" ")
